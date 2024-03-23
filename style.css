@@ -1,57 +1,50 @@
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    line-height: 1.6;
 }
 
-header {
-    background-color: #333;
+header, nav, footer {
+    background: #333;
     color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #777 3px solid;
+    text-align: center;
+    padding: 1em 0;
 }
 
-header h1, header p {
-    text-align: center;
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
 }
 
 section {
     padding: 20px;
-    margin: 20px 0;
 }
 
-ul {
-    list-style-type: none;
+section h2 {
+    color: #333;
 }
 
 footer {
-    background-color: #333;
-    color: #fff;
+    background: #222;
+    color: #aaa;
     text-align: center;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    padding: 10px 0;
 }
 
-a {
-    color: #f4f4f4;
-}
-
-button {
-    background-color: #555;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    display: inline-block;
-}
-
-button:hover {
-    background-color: #777;
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
 }
